@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fragment Identifier Links</title>
+</head>
+<body>
+	<h1 id="top">Links to the section of same page</h1>
+	<section>
+		<ul>
+			<li><a href="#section1">Overview</li>
+		<li><a href="#section2">History</li>
+		</ul>
+	</section>
+<section id="section1">
+	<h3>Overview</h3>
+	<p>gfhgh And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same-page.html. That is located in examples/Lecture09 folder. And as you could see, the links that have set up here all have a very specific format in the href attribute. It's a # followed by some name like section1, section2, and so on. Now what these links are pointing to is a section of our page. fhghghsg nteresting to note here is that the first link, linking to a file in the same directory, is clearly an inline tag since it's not forcing itself to go to a new line. But yet in the second case, div linking to a file in the same directory, we're surrounding the div tag with our a tag. So what's going on here? Are we using block level element, the div, inside an inline element? Well, turns out things are little bit more interesting. Let's take a look at the a tag as defined in the W3C specification. If you take a look closely, the a tag is both a flow content and a phrasing content. In other words, to map it back to the HTML four days, the a tag in the HTML5 is both an inline element and a block level element at the same time. And this is what allows us to take the a tag and surround a div tag inside of it. The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+Start transcript at 3 minutes 57 seconds3:57
+Next, let's take a look at an example of an external link. Here we are in Sublime Text again and looking at the file called links-external.html which is again located in the examples/ Lecture09 folder.
+Start transcript at 4 minutes 13 seconds4:13
+And this document basically contains just a single link. There's really nothing super special about external links other that their href value usually starts with http:// because it's usually the case that external links are hosted on a different domain name than your website. However, there's one feature of the a element that I would like to demonstrate that is</p>
+</section>
+
+<section id="section2">
+	<h4>History</h4>
+	<p>hfsgurhfaggg  jkdfbg jjkbkgkjkjg hmbvnv mhjhjbhjffjhhvhjfhjvhbvhvbnvhjvhvcgvhbhjbmbhbhhjvhbhj bv hvhvhjvhjbhjvhjvhjbbmkbhbb bhbhjbbjhhjhhjvhjvhjhjhjbj And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same-page.html. That is located in examples/Lecture09 folder. And as you could see, the links that have set up here all have a very specific format in the href attribute. It's a # followed by some name like section1, section2, and so on. Now what these links are pointing to is a section of our page. gggggggghuiyrhkhkjf nteresting to note here is that the first link, linking to a file in the same directory, is clearly an inline tag since it's not forcing itself to go to a new line. But yet in the second case, div linking to a file in the same directory, we're surrounding the div tag with our a tag. So what's going on here? Are we using block level element, the div, inside an inline element? Well, turns out things are little bit more interesting. Let's take a look at the a tag as defined in the W3C specification. If you take a look closely, the a tag is both a flow content and a phrasing content. In other words, to map it back to the HTML four days, the a tag in the HTML5 is both an inline element and a block level element at the same time. And this is what allows us to take the a tag and surround a div tag inside of it. The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+Start transcript at 3 minutes 57 seconds3:57
+Next, let's take a look at an example of an external link. Here we are in Sublime Text again and looking at the file called links-external.html which is again located in the examples/ Lecture09 folder.
+Start transcript at 4 minutes 13 seconds4:13
+And this document basically contains just a single link. There's really nothing super special about external links other that their href value usually starts with http:// because it's usually the case that external links are hosted on a different domain name than your website. However, there's one feature of the a element that I would like to demonstrate that is</p>
+</section>
+<div>
+	<h2><a href="section2">section 2</a></h2>
+	<p>Back to top: <a href="#top">Back to Top</a></p>
+</div>
+
+</body>
+</html>
